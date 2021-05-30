@@ -1,0 +1,17 @@
+{
+  "name": "hamal-updates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=DEVELOPMENT node index.js"
+  },
+  "author": "nktfh100",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "discord.js": "^12.5.3",
+    "firebase": "^8.6.1",
+    "mysql2": "^2.2.5"
+  }
+}
