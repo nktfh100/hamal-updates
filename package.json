@@ -2,16 +2,21 @@
   "name": "hamal-updates",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=DEVELOPMENT node index.js"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"npm run start\""
   },
-  "author": "nktfh100",
+  "author": "nktfh100 <me@nktfh100.com>",
   "license": "ISC",
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "discord.js": "^12.5.3",
-    "firebase": "^8.6.1",
-    "mysql2": "^2.2.5"
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.2.2"
   }
 }

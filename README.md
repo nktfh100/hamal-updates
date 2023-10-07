@@ -1,8 +1,21 @@
-Live hamal updates from www.hamal.co.il  
-(My first discord bot)
+# Hamal Updates
 
-Commands:  
-&help -> Help command  
-&channel #channel -> Set the updates channel (where updates will be posted)  
-&role @role -> Set the role that the bot will mention in each update (set to "none" if you don't want it to mention any role)  
-&redalert true/false -> If you want to only get red alert updates  
+A simple discord web hook to get hamal updates.
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Create a `.env` with WEBHOOK_URL set to your webhook url
+
+## Usage
+
+First build the application with `npm run build`
+
+Then run the application with `npm start`
+
+For development simply run `npm run dev`
+
+## Deployment
+
+Docker can be used with the provided Dockerfile.
